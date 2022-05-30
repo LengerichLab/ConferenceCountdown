@@ -4,14 +4,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="shortcut icon" href="/~blengeri/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/~blengeri/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <title>Conference Deadlines | Ben Lengerich</title>
     <meta name="viewport" content="width=device-width">
     <script src="https://use.typekit.net/wxk8bwy.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <link rel="stylesheet" href="/~blengeri/css/grid.css" type="text/css">
-    <link rel="stylesheet" href="/~blengeri/css/main.css">
+    <link rel="stylesheet" href="./css/grid.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css">
 
 <style type="text/css">
 /* Some resetting */
@@ -343,9 +343,9 @@ $(document).ready(function() {
         <br />
       </div>
       <div id="signature">
-        Created by <a href="https://twitter.com/karpathy">@karpathy</a>, modified by Xun Zheng and me <a href="https://twitter.com/ben_lengerich">(@blengerich)</a>.<br>
+        Created by <a href="https://twitter.com/karpathy">@karpathy</a>, modified by Xun Zheng and me <a href="https://twitter.com/ben_lengerich">(@ben_lengerich)</a>.<br>
         This list is not intended to be comprehensive,<br>
-        but please contact me if you have a suggestion.
+        but please contact me or add to <a href="https://github.com/blengerich/ConferenceCountdown">the Github repo</a> if you have a suggestion.
       </div>
     </article>
   </div>
