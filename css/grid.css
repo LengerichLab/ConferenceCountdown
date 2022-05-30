@@ -1,0 +1,598 @@
+/*@import url("materials/ft/stylesheet.css");*/
+
+/*@charset "UTF-8";*/
+/* CSS Document */
+
+/*
+	Variable Grid System.
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+body {
+  min-width: 960px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 961px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+	position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+	width:60px;
+}
+
+.container_12 .grid_2 {
+	width: 140px;
+	
+}
+
+.container_12 .grid_3 {
+	width:220px;
+}
+
+.container_12 .grid_4 {
+	width:300px;
+}
+
+.container_12 .grid_5 {
+	width:380px;
+}
+
+.container_12 .grid_6 {
+	width:460px;
+}
+
+.container_12 .grid_7 {
+	width:540px;
+}
+
+.container_12 .grid_8 {
+	width:620px;
+}
+
+.container_12 .grid_9 {
+	width: 700px;
+	text-align: left;
+}
+
+.container_12 .grid_10 {
+	width:780px;
+}
+
+.container_12 .grid_11 {
+	width:860px;
+}
+
+.container_12 .grid_12 {
+	width: 940px;
+	color: #FFF;
+}
+
+.container_12 .grid_12_belowspace {
+	width:940px;
+	height:5px;
+	
+}
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .prefix_1 {
+	padding-left:80px;
+}
+
+.container_12 .prefix_2 {
+	padding-left:160px;
+}
+
+.container_12 .prefix_3 {
+	padding-left:240px;
+}
+
+.container_12 .prefix_4 {
+	padding-left:320px;
+}
+
+.container_12 .prefix_5 {
+	padding-left:400px;
+}
+
+.container_12 .prefix_6 {
+	padding-left:480px;
+}
+
+.container_12 .prefix_7 {
+	padding-left:560px;
+}
+
+.container_12 .prefix_8 {
+	padding-left:640px;
+}
+
+.container_12 .prefix_9 {
+	padding-left:720px;
+}
+
+.container_12 .prefix_10 {
+	padding-left:800px;
+}
+
+.container_12 .prefix_11 {
+	padding-left:880px;
+}
+
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .suffix_1 {
+	padding-right:80px;
+}
+
+.container_12 .suffix_2 {
+	padding-right:160px;
+}
+
+.container_12 .suffix_3 {
+	padding-right:240px;
+}
+
+.container_12 .suffix_4 {
+	padding-right:320px;
+}
+
+.container_12 .suffix_5 {
+	padding-right:400px;
+}
+
+.container_12 .suffix_6 {
+	padding-right:480px;
+}
+
+.container_12 .suffix_7 {
+	padding-right:560px;
+}
+
+.container_12 .suffix_8 {
+	padding-right:640px;
+}
+
+.container_12 .suffix_9 {
+	padding-right:720px;
+}
+
+.container_12 .suffix_10 {
+	padding-right:800px;
+}
+
+.container_12 .suffix_11 {
+	padding-right:880px;
+}
+
+
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .push_1 {
+	left:80px;
+}
+
+.container_12 .push_2 {
+	left:160px;
+}
+
+.container_12 .push_3 {
+	left:240px;
+}
+
+.container_12 .push_4 {
+	left:320px;
+}
+
+.container_12 .push_5 {
+	left:400px;
+}
+
+.container_12 .push_6 {
+	left:480px;
+}
+
+.container_12 .push_7 {
+	left:560px;
+}
+
+.container_12 .push_8 {
+	left:640px;
+}
+
+.container_12 .push_9 {
+	left:720px;
+}
+
+.container_12 .push_10 {
+	left:800px;
+}
+
+.container_12 .push_11 {
+	left:880px;
+}
+
+
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .pull_1 {
+	left:-80px;
+}
+
+.container_12 .pull_2 {
+	left:-160px;
+}
+
+.container_12 .pull_3 {
+	left:-240px;
+}
+
+.container_12 .pull_4 {
+	left:-320px;
+}
+
+.container_12 .pull_5 {
+	left:-400px;
+}
+
+.container_12 .pull_6 {
+	left:-480px;
+}
+
+.container_12 .pull_7 {
+	left:-560px;
+}
+
+.container_12 .pull_8 {
+	left:-640px;
+}
+
+.container_12 .pull_9 {
+	left:-720px;
+}
+
+.container_12 .pull_10 {
+	left:-800px;
+}
+
+.container_12 .pull_11 {
+	left:-880px;
+}
+
+
+
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix {
+  zoom: 1;
+}
+
+/*------------fonts*/
+#name {
+	font-family: DIN-Bold;
+	font-size: 35px;
+	padding: 0px 0px 15px 0px;
+	color: #333;
+}
+
+#biotext {
+	font-family: DIN-Light;
+	font-size: 17px;
+	line-height: 1.4;
+	text-align: left;
+}
+
+#biotext_big {
+	font-family: DIN-Light;
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: left;
+}
+
+#title {
+	font-family: DIN-Bold;
+	font-size: 22px;
+	line-height: 1.3;
+	color: #666;
+	padding: 0px 0px 11px 0px;	
+}
+
+#thread_description {
+	font-family: DIN-Light;
+	font-size: 17px;
+	line-height: 1.4;
+	color: #333;
+	padding: 11px 0px 11px 0px;
+	text-align: left;	
+	
+}
+
+
+#project_description {
+	font-family: DIN-Light;
+	font-size: 14px;
+	line-height: 1.3;
+	color: #333;
+	padding: 0px 5px 5px 0px;
+	text-align: left;	
+}
+
+#news {
+	font-family: DIN-Light;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #666;
+	padding: 0px 8px 10px 0px;
+	text-align: left;
+}
+
+
+#address {
+	font-family: DIN-Light;
+	font-size: 15px;
+	line-height: 1.4;
+	color: #666;
+	padding: 0px 0px 0px 0px;
+	text-align: left;
+}
+
+#project_title {
+	font-family: DIN-Medium;
+	font-size: 17px;
+	line-height: 1.4;
+	color: #333;
+	padding: 18px 0px 4px 0px;
+	text-align: left;
+}
+
+#toppadding {
+	padding: 10px 0px 0px 0px;
+}
+
+#bottompadding {
+	padding: 0px 0px 40px 0px;
+}
+
+
+#bottompline {
+	border-style: solid; 
+	border-width:thin; 
+}
+
+#rightalign {
+	text-align:right;
+}
+
+#centeralign {
+	text-align:center;
+}
+
+#contents {
+	font-family: DIN-Light;
+	font-size: 16px;
+	line-height:1.3;
+}
+
+
+#contents b {
+	font-family: DIN-Bold;
+}
+
+#contents t {
+	font-family: DIN-Light;
+	font-size: 20px;
+}
+
+#contents i {
+	font-style:italic;
+}
+
+#cv{
+	font-family: DIN-Bold;
+	font-size: 22px;
+	line-height: 1.3;
+	color: #333;
+	padding: 7px 0px 0px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #333;	
+}
+
+
+a.regular:link {
+	color: #999;
+	font-family: DIN-Medium;
+}      /* unvisited link */
+a.regular:visited {
+	color: #999;
+	font-family: DIN-Medium;
+}  /* visited link */
+a.regular:hover {
+	color: #0066FF;
+}  /* mouse over link */
+a.regular:active {
+	color: #0066FF;
+}  /* selected link */
+
+
+a.paper:link {
+	color: #999;
+	font-family: DIN-Medium;
+}      /* unvisited link */
+a.paper:visited {
+	color: #999;
+	font-family: DIN-Medium;
+}  /* visited link */
+a.paper:hover {
+	color: #0066FF;
+}  /* mouse over link */
+a.paper:active {
+	color: #0066FF;
+}  /* selected link */
+
+a.mainpaper:link {
+	color: #999;
+	font-family: DIN-Medium;
+	font-size:9px;
+}      /* unvisited link */
+a.mainpaper:visited {
+	color: #999;
+	font-family: DIN-Medium;
+	font-size:9px;
+
+}  /* visited link */
+a.mainpaper:hover {
+	color: #0066FF;
+	font-size:9px;
+
+}  /* mouse over link */
+a.mainpaper:active {
+	color: #0066FF;
+	font-size:9px;
+
+}  /* selected link */
+
+a.main:link {
+	
+}      /* unvisited link */
+a.main:visited {
+	
+}  /* visited link */
+a.main:hover {
+	color: #0066FF;
+}  /* mouse over link */
+a.main:active {
+	color: #0066FF;
+}  /* selected link */
+
+.line-separator{
+
+height:1px;
+
+background:#717171;
+
+border-bottom:1px solid #313030;
+
+}
