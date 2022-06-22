@@ -1,108 +1,116 @@
 // DATABASE
-var deadlines= [];
+var deadlines= [
+  {
+    venue: "ML4H",
+    area: "Healthcare",
+    deadline: moment("2022-09-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://ml4health.github.io/2022/index.html",
+    approx: 0,
+  },
+  {
+    venue: "ICML",
+    area: "Machine Learning",
+    deadline: moment("2022-01-20 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://icml.cc",
+    approx: 0,
+  },
+  {
+    venue: "MLSys",
+    area: "Machine Learning",
+    deadline: moment("2021-10-15 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://mlsys.org/",
+    approx: 0,
+  },
+  {
+    venue: "UAI",
+    area: "Machine Learning",
+    deadline: moment("2022-02-25 23:59:00 +0100", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://auai.org/uai2022/",
+    approx: 0,
+  },
+  {
+    venue: "NeurIPS",
+    area: "Machine Learning",
+    deadline: moment("2022-05-16 13:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://nips.cc/",
+    approx: 0,
+  },
+  {
+    venue: "AISTATS",
+    area: "Machine Learning",
+    deadline: moment("2021-10-15 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://www.aistats.org/",
+    approx: 0,
+  },
+  {
+    venue: "ICLR",
+    area: "Machine Learning",
+    deadline: moment("2021-09-29 8:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://www.iclr.cc",
+    approx: 0,
+  },
+  {
+    venue: "CHIL",
+    area: "Healthcare",
+    deadline: moment("2022-01-14 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://chilconference.org"
+  },
+  {
+    venue: "IJCAI",
+    area: "AI",
+    deadline: moment("2022-01-07 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.ijcai-22.org/",
+    approx: 0,
+  },
+  {
+    venue: "AAAI",
+    area: "AI",
+    deadline: moment("2021-08-30 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://aaai.org/Conferences/AAAI-22/",
+    approx: 0,
+  },
+  {
+    venue: "KDD",
+    area: "AI",
+    deadline: moment("2022-02-10 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.kdd.org/kdd2022",
+    approx: 0,
+  },
+  {
+    venue: "RECOMB",
+    area: "Computational Biology",
+    deadline: moment("2021-11-01 17:00:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.recomb2022.org",
+    approx: 0
+  },
+  {
+    venue: "ISMB",
+    area: "Computational Biology",
+    deadline: moment("2022-01-13 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.iscb.org/ismb2022",
+    approx: 0,
+  },
+  {
+    venue: "PSB",
+    area: "Computational Biology",
+    deadline: moment("2022-08-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://psb.stanford.edu/",
+    approx: 0,
+  },
+  {
+    venue: "MLHC",
+    area: "Healthcare",
+    deadline: moment("2022-04-14 17:59:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.mlforhc.org/",
+    approx: 0,
+  },
+];
+
 var shouldDisplay = {"Machine Learning": true,
                     "AI": true,
                     "Computational Biology": true,
                     "Healthcare": true,
                     "Linguistics": false};
-deadlines.push({
-  venue: "ICML",
-  area: "Machine Learning",
-  deadline: moment("2022-01-20 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://icml.cc",
-  approx: 0,
-});
-deadlines.push({
-  venue: "MLSys",
-  area: "Machine Learning",
-  deadline: moment("2021-10-15 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://mlsys.org/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "UAI",
-  area: "Machine Learning",
-  deadline: moment("2022-02-25 23:59:00 +0100", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://auai.org/uai2022/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "NeurIPS",
-  area: "Machine Learning",
-  deadline: moment("2022-05-16 13:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://nips.cc/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "AISTATS",
-  area: "Machine Learning",
-  deadline: moment("2021-10-15 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://www.aistats.org/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "ICLR",
-  area: "Machine Learning",
-  deadline: moment("2021-09-29 8:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://www.iclr.cc",
-  approx: 0,
-});
-deadlines.push({
-  venue: "CHIL",
-  area: "Healthcare",
-  deadline: moment("2022-01-14 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://chilconference.org"
-});
-deadlines.push({
-  venue: "IJCAI",
-  area: "AI",
-  deadline: moment("2022-01-07 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://www.ijcai-22.org/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "AAAI",
-  area: "AI",
-  deadline: moment("2021-08-30 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://aaai.org/Conferences/AAAI-22/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "KDD",
-  area: "AI",
-  deadline: moment("2022-02-10 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://www.kdd.org/kdd2022",
-  approx: 0,
-});
-deadlines.push({
-  venue: "RECOMB",
-  area: "Computational Biology",
-  deadline: moment("2021-11-01 17:00:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://www.recomb2022.org",
-  approx: 0
-});
-deadlines.push({
-  venue: "ISMB",
-  area: "Computational Biology",
-  deadline: moment("2022-01-13 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://www.iscb.org/ismb2022",
-  approx: 0,
-});
-deadlines.push({
-  venue: "PSB",
-  area: "Computational Biology",
-  deadline: moment("2022-08-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "http://psb.stanford.edu/",
-  approx: 0,
-});
-deadlines.push({
-  venue: "MLHC",
-  area: "Healthcare",
-  deadline: moment("2022-04-14 17:59:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
-  website: "https://www.mlforhc.org/",
-  approx: 0,
-});
-
 
 // HELPER FUNCTIONS
 var timeDescription = function(x) {
