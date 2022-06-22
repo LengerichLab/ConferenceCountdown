@@ -121,7 +121,7 @@ h1 {
         Machine Learning:<input type="checkbox" id="Machine Learning" name="ml" onclick="" checked>
         AI:<input type="checkbox" id="AI"  onclick="" name="ai" checked>
         Computational Biology:<input type="checkbox" id="Computational Biology" name="cb" onclick="" checked>
-        Algorithms:<input type="checkbox" id="Algorithms"  onclick="" name="alg" checked>
+        Healthcare:<input type="checkbox" id="Healthcare"  onclick="" name="hc" checked>
         Linguistics:<input type="checkbox" id="Linguistics"  onclick="" name="lin" checked>
         <br />
         <div id="deadlinesdiv"></div>

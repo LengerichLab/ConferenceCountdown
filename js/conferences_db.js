@@ -3,8 +3,8 @@ var deadlines= [];
 var shouldDisplay = {"Machine Learning": true,
                     "AI": true,
                     "Computational Biology": true,
+                    "Healthcare": true,
                     "Linguistics": false};
-// Machine Learning
 deadlines.push({
   venue: "ICML",
   area: "Machine Learning",
@@ -49,10 +49,10 @@ deadlines.push({
 });
 deadlines.push({
   venue: "CHIL",
-  area: "Computational Biology",
+  area: "Healthcare",
   deadline: moment("2022-01-14 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
   website: "https://chilconference.org"
-})
+});
 deadlines.push({
   venue: "IJCAI",
   area: "AI",
@@ -97,7 +97,7 @@ deadlines.push({
 });
 deadlines.push({
   venue: "MLHC",
-  area: "Computational Biology",
+  area: "Healthcare",
   deadline: moment("2022-04-14 17:59:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
   website: "https://www.mlforhc.org/",
   approx: 0,
@@ -107,7 +107,7 @@ deadlines.push({
 // HELPER FUNCTIONS
 var timeDescription = function(x) {
   return x.format("MM/DD/YYYY h:mm:ss A");
-}
+};
 
 var timeLeftDescription = function(t) {
   if(t<0) t=0;
@@ -120,7 +120,7 @@ var timeLeftDescription = function(t) {
   var tdays = thours / 24;
   var days = Math.floor(tdays);
   return days + " days, " + hours + "h " + minutes + "m " + seconds + "s";
-}
+};
 
 // Display function, called every second or so
 function refreshDisplay() {
@@ -128,14 +128,12 @@ function refreshDisplay() {
   $("#currtime").text("Current time: " + timeDescription(d));
 
   // calculate and display deadlines
-  for(var i=0;i<deadlines.length;i++) {
+  for(var i=0; i<deadlines.length; i++) {
     var dl= deadlines[i];
-    //if (shouldDisplay[dl.area]) {
     var checkBox = document.getElementById(dl.area);
-    if (checkBox.checked == true) {
+    if (checkBox.checked === true) {
       var timeLeft= dl.deadline - d;
       warningString= "";
-      //if (timeLeft < 0) { warningString= "based on previous year!"; }
       if (dl.approx) { warningString= "based on previous year!"; }
       prefix = "";
       suffix = "";
@@ -158,7 +156,7 @@ function refreshDisplay() {
     }
   }
 }
-// int main(){}
+
 $(document).ready(function() {
   $("input").each(function() {
       var mycookie = $.cookie($(this).attr('name'));
@@ -177,7 +175,7 @@ $(document).ready(function() {
       });
   });
 
-  for (var i=0; i<deadlines.length;i++) {
+  for (var i=0; i<deadlines.length; i++) {
     var d = moment();
     var dl = deadlines[i];
     if (dl.deadline - d <= 0) {
@@ -189,13 +187,7 @@ $(document).ready(function() {
     return a.deadline - b.deadline;
   });
   // create divs for all deadlines and insert into DOM
-  for(var i=0;i<deadlines.length;i++) {
-    /*var d = moment();
-    var dl = deadlines[i];
-    var timeLeft = dl.deadline - d;
-    if (timeLeft <= 0){
-      continue;
-    }*/
+  for(var i=0; i<deadlines.length; i++) {
     $("<div class=dd id=deadline" + i + "></div>").appendTo("div#deadlinesdiv");
     var divid = "#deadline" + i;
 
