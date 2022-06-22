@@ -147,23 +147,23 @@ footer li a:hover {
 }
 
 .twitter {
-  background-image: url(/afs/cs/user/blengeri/www/img/twitter.svg);
+  background-image: url(./img/twitter.svg);
 }
 
 .facebook {
-  background-image: url(/afs/cs/user/blengeri/www/img/fb.svg);
+  background-image: url(./img/fb.svg);
 }
 
 .linkedin {
-  background-image: url(/afs/cs/user/blengeri/www/img/in.svg);
+  background-image: url(./img/in.svg);
 }
 
 .email {
-  background-image: url(/afs/cs/user/blengeri/www/img/email.svg);
+  background-image: url(./img/email.svg);
 }
 
 .quora {
-  background-image: url(/afs/cs/user/blengeri/www/img/quora-128.png);
+  background-image: url(./img/quora-128.png);
 }
 
 
