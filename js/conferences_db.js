@@ -38,14 +38,14 @@ var deadlines= [
   {
     venue: "AISTATS",
     area: "Machine Learning",
-    deadline: moment("2021-10-15 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
+    deadline: moment("2022-10-06 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
     website: "http://www.aistats.org/",
     approx: 0,
   },
   {
     venue: "ICLR",
     area: "Machine Learning",
-    deadline: moment("2021-09-29 8:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
+    deadline: moment("2022-09-21 8:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
     website: "http://www.iclr.cc",
     approx: 0,
   },
@@ -65,8 +65,8 @@ var deadlines= [
   {
     venue: "AAAI",
     area: "AI",
-    deadline: moment("2021-08-30 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://aaai.org/Conferences/AAAI-22/",
+    deadline: moment("2022-08-08 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://aaai.org/Conferences/AAAI-23/",
     approx: 0,
   },
   {
