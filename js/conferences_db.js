@@ -24,8 +24,8 @@ var deadlines= [
   {
     venue: "UAI",
     area: "Machine Learning",
-    deadline: moment("2022-02-25 23:59:00 +0100", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://auai.org/uai2022/",
+    deadline: moment("2023-02-17 23:59:00 +0100", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "http://auai.org/uai2023/",
     approx: 0,
   },
   {
@@ -52,13 +52,13 @@ var deadlines= [
   {
     venue: "CHIL",
     area: "Healthcare",
-    deadline: moment("2022-02-03 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+    deadline: moment("2023-02-03 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
     website: "https://www.chilconference.org/"
   },
   {
     venue: "IJCAI",
     area: "AI",
-    deadline: moment("2022-01-11 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
+    deadline: moment("2023-01-16 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
     website: "https://www.ijcai-23.org/",
     approx: 0,
   },
@@ -72,8 +72,8 @@ var deadlines= [
   {
     venue: "KDD",
     area: "AI",
-    deadline: moment("2022-02-10 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.kdd.org/kdd2022",
+    deadline: moment("2023-02-23 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
+    website: "https://www.kdd.org/kdd2023",
     approx: 0,
   },
   {
