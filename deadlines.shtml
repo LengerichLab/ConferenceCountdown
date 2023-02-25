@@ -105,6 +105,7 @@ h1 {
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 
+<script type="text/javascript" src="js/jquery.csv.js"></script>
 <script type="text/javascript" src="js/conferences_db.js"></script>
 
 </head>
@@ -113,17 +114,19 @@ h1 {
     <div id="header"></div>
     <article style="text-align:left;">
       <div id="surround">
-        <h1>ML+CompBio Conference Deadlines</h1>
-        <div id="currtime"></div>
-        <br />
-        For conferences with an abstract required before the full paper, the abstract deadline is listed.
-        <br />
-        Machine Learning:<input type="checkbox" id="Machine Learning" name="ml" onclick="" checked>
-        AI:<input type="checkbox" id="AI"  onclick="" name="ai" checked>
-        Computational Biology:<input type="checkbox" id="Computational Biology" name="cb" onclick="" checked>
-        Healthcare:<input type="checkbox" id="Healthcare"  onclick="" name="hc" checked>
-        Linguistics:<input type="checkbox" id="Linguistics"  onclick="" name="lin" checked>
-        <br />
+        <div style="text-align:center">
+            <h1>ML+CompBio Conference Deadlines</h1>
+            <div id="currtime"></div>
+            <br />
+            For conferences with an abstract required before the full paper, the abstract deadline is listed.
+            <br />
+            ML:<input type="checkbox" id="ML" name="ml" onclick="" checked>&nbsp&nbsp&nbsp
+            AI:<input type="checkbox" id="AI"  onclick="" name="ai" checked>&nbsp&nbsp&nbsp
+            CompBio:<input type="checkbox" id="CompBio" name="cb" onclick="" checked>&nbsp&nbsp&nbsp
+            Healthcare:<input type="checkbox" id="Healthcare"  onclick="" name="hc" checked>
+            <!--Linguistics:<input type="checkbox" id="Linguistics"  onclick="" name="lin" checked>-->
+            <br />
+        </div>
         <div id="deadlinesdiv"></div>
         <br />
       </div>

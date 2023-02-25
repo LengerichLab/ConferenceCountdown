@@ -1,116 +1,39 @@
-// DATABASE
-var deadlines= [
-  {
-    venue: "ML4H",
-    area: "Healthcare",
-    deadline: moment("2022-09-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://ml4health.github.io/2022/index.html",
-    approx: 0,
-  },
-  {
-    venue: "ICML",
-    area: "Machine Learning",
-    deadline: moment("2023-01-26 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://icml.cc",
-    approx: 0,
-  },
-  {
-    venue: "MLSys",
-    area: "Machine Learning",
-    deadline: moment("2022-10-28 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://mlsys.org/",
-    approx: 0,
-  },
-  {
-    venue: "UAI",
-    area: "Machine Learning",
-    deadline: moment("2023-02-17 23:59:00 +0100", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://auai.org/uai2023/",
-    approx: 0,
-  },
-  {
-    venue: "NeurIPS",
-    area: "Machine Learning",
-    deadline: moment("2022-05-16 13:00:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://nips.cc/",
-    approx: 0,
-  },
-  {
-    venue: "AISTATS",
-    area: "Machine Learning",
-    deadline: moment("2022-10-06 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://www.aistats.org/",
-    approx: 0,
-  },
-  {
-    venue: "ICLR",
-    area: "Machine Learning",
-    deadline: moment("2022-09-21 8:00:00 -0700", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://www.iclr.cc",
-    approx: 0,
-  },
-  {
-    venue: "CHIL",
-    area: "Healthcare",
-    deadline: moment("2023-02-03 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.chilconference.org/"
-  },
-  {
-    venue: "IJCAI",
-    area: "AI",
-    deadline: moment("2023-01-16 23:59:00 -1200", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.ijcai-23.org/",
-    approx: 0,
-  },
-  {
-    venue: "AAAI",
-    area: "AI",
-    deadline: moment("2022-08-08 23:59:00 -1000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://aaai.org/Conferences/AAAI-23/",
-    approx: 0,
-  },
-  {
-    venue: "KDD",
-    area: "AI",
-    deadline: moment("2023-02-23 23:59:00 -0800", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.kdd.org/kdd2023",
-    approx: 0,
-  },
-  {
-    venue: "RECOMB",
-    area: "Computational Biology",
-    deadline: moment("2022-10-07 17:00:00 -0400", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://recomb2023.bilkent.edu.tr/keydates_and_deadlines.html",
-    approx: 0
-  },
-  {
-    venue: "ISMB",
-    area: "Computational Biology",
-    deadline: moment("2023-01-19 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.iscb.org/ismbeccb2023-submissions/proceedings",
-    approx: 0,
-  },
-  {
-    venue: "PSB",
-    area: "Computational Biology",
-    deadline: moment("2022-08-01 23:59:00 +0000", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "http://psb.stanford.edu/",
-    approx: 0,
-  },
-  {
-    venue: "MLHC",
-    area: "Healthcare",
-    deadline: moment("2023-04-12 17:59:00 -0500", "YYYY-MM-DD HH:mm:ss Z"),
-    website: "https://www.mlforhc.org/",
-    approx: 0,
-  },
-];
+// Database of conferences and deadlines.
+var conferences_csv = `venue,area,deadline,website,approx
+ML4H,Healthcare,2022-09-01 23:59:00 +0000,https://ml4health.github.io/2022/index.html,1
+MLHC,Healthcare,2023-04-12 17:59:00 -0500,https://www.mlforhc.org,0
+CHIL,Healthcare,2023-02-03 23:59:00,https://www.chilconference.org,1
+PSB,CompBio,2023-08-01 23:59:00 +0000, http://psb.stanford.edu,0
+ISMB,CompBio,2023-01-19 23:59:00 +0000,https://www.iscb.org/ismbeccb2023-submissions/proceedings,1
+RECOMB,CompBio,2022-10-07 17:00:00 -0400,http://recomb2023.bilkent.edu.tr/keydates_and_deadlines.html,1
+KDD,AI,2023-02-23 23:59:00 -0800,https://www.kdd.org/kdd2023,1
+AAAI,AI,2022-08-08 23:59:00 -1000,https://aaai.org/Conferences/AAAI-23/,1
+IJCAI,AI,2023-01-16 23:59:00 -1200,https://www.ijcai-23.org,1
+ICLR,ML,2022-09-21 8:00:00 -0700,http://www.iclr.cc,1
+AISTATS,ML,2022-10-06 23:59:00 +0000, http://www.aistats.org,1
+NeurIPS,ML,2023-05-11 13:00:00,http://nips.cc,0
+UAI,ML,2023-02-17 23:59:00 +0100,http://auai.org/uai2023,1
+MLSys,ML,2022-10-28 23:59:00 +0000,https://mlsys.org,1
+ICML,ML,2023-01-26 23:59:00 +0000,http://icml.cc,1
+`
+var processCSVData = function(data) {
+        ar = $.csv.toObjects(data);
+        for (let i=0; i < ar.length; i++) {
+            ar[i].deadline = moment(ar[i].deadline, "YYYY-MM-DD HH:mm:ss Z")
+            ar[i].approx = parseInt(ar[i].approx);
+        }
+        return ar;
+};
+var conferences = processCSVData(conferences_csv);
+console.log(conferences);
 
-var shouldDisplay = {"Machine Learning": true,
-                    "AI": true,
-                    "Computational Biology": true,
-                    "Healthcare": true,
-                    "Linguistics": false};
+var shouldDisplay = {
+    "ML": true,
+    "AI": true,
+    "CompBio": true,
+    "Healthcare": true,
+    "Linguistics": false
+};
 
 // HELPER FUNCTIONS
 var timeDescription = function(x) {
@@ -136,25 +59,26 @@ function refreshDisplay() {
   $("#currtime").text("Current time: " + timeDescription(d));
 
   // calculate and display deadlines
-  for(var i=0; i<deadlines.length; i++) {
-    var dl= deadlines[i];
-    var checkBox = document.getElementById(dl.area);
+  for(var i=0; i<conferences.length; i++) {
+    var conf = conferences[i];
+    var checkBox = document.getElementById(conf.area);
     if (checkBox.checked === true) {
-      var timeLeft= dl.deadline - d;
+      var timeLeft= conf.deadline - d;
+      console.log(conf, timeLeft);
       warningString= "";
-      if (dl.approx) { warningString= "based on previous year!"; }
+      if (conf.approx) { warningString= "based on previous year!"; }
       prefix = "";
       suffix = "";
-      if ("website" in dl) {
-        prefix = "<a class=\"sd\" href=\"" + dl.website + "\">";
+      if ("website" in conf) {
+        prefix = "<a class=\"sd\" href=\"" + conf.website + "\">";
         suffix = "</a>";
       }
 
       $("#deadline" + i).html(
         prefix + "<div class=\"tld\">" + timeLeftDescription(timeLeft) + "</div>"
-               + "<div class=\"vd\">" + dl.venue + "</div>"
-               + "<div class=\"ad\">" + dl.area + "</div>"
-               + "<div class=\"td\">Deadline: " + timeDescription(dl.deadline) + "</div>"
+               + "<div class=\"vd\">" + conf.venue + "</div>"
+               + "<div class=\"ad\">" + conf.area + "</div>"
+               + "<div class=\"td\">Deadline: " + timeDescription(conf.deadline) + "</div>"
                + "<div class=\"wd\">" + warningString + "</div>"
                + suffix
       );
@@ -183,19 +107,19 @@ $(document).ready(function() {
       });
   });
 
-  for (var i=0; i<deadlines.length; i++) {
+  for (var i=0; i<conferences.length; i++) {
     var d = moment();
-    var dl = deadlines[i];
-    if (dl.deadline - d <= 0) {
-      dl.deadline.add(1, 'year');
-      dl.approx = 1;
+    var conf = conferences[i];
+    if (conf.deadline - d <= 0) {
+      conf.deadline.add(1, 'year');
+      conf.approx = 1;
     }
   }
-  deadlines.sort(function(a, b) {
+  conferences.sort(function(a, b) {
     return a.deadline - b.deadline;
   });
   // create divs for all deadlines and insert into DOM
-  for(var i=0; i<deadlines.length; i++) {
+  for(var i=0; i<conferences.length; i++) {
     $("<div class=dd id=deadline" + i + "></div>").appendTo("div#deadlinesdiv");
     var divid = "#deadline" + i;
 
@@ -208,7 +132,5 @@ $(document).ready(function() {
     function(){ refreshDisplay(); },
     1000
   );
-
-  // draw!
   refreshDisplay();
 });
