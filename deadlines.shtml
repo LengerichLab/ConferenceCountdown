@@ -131,7 +131,7 @@ h1 {
         <br />
       </div>
       <div id="signature">
-        Created by <a href="https://twitter.com/karpathy">@karpathy</a>, modified by Xun Zheng and me <a href="https://twitter.com/ben_lengerich">(@ben_lengerich)</a>.<br>
+        Created by <a target="_blank" href="https://twitter.com/karpathy">@karpathy</a>, modified by Xun Zheng and me <a target="_blank" href="https://twitter.com/ben_lengerich">(@ben_lengerich)</a>.<br>
         This list is not intended to be comprehensive, but please
         <br> contact me or add to <a href="https://github.com/blengerich/ConferenceCountdown" target="_blank">the Github repo</a> if you have a suggestion.
       </div>
