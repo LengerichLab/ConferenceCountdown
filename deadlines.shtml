@@ -120,10 +120,11 @@ h1 {
             <br />
             For conferences with an abstract required before the full paper, the abstract deadline is listed.
             <br />
-            ML:<input type="checkbox" id="ML" name="ml" onclick="" checked>&nbsp&nbsp&nbsp
+            <div id="checkboxesdiv"></div>
+            <!--ML:<input type="checkbox" id="ML" name="ml" onclick="" checked>&nbsp&nbsp&nbsp
             AI:<input type="checkbox" id="AI"  onclick="" name="ai" checked>&nbsp&nbsp&nbsp
             CompBio:<input type="checkbox" id="CompBio" name="cb" onclick="" checked>&nbsp&nbsp&nbsp
-            Healthcare:<input type="checkbox" id="Healthcare"  onclick="" name="hc" checked>
+            Healthcare:<input type="checkbox" id="Healthcare"  onclick="" name="hc" checked>-->
             <!--Linguistics:<input type="checkbox" id="Linguistics"  onclick="" name="lin" checked>-->
             <br />
         </div>
