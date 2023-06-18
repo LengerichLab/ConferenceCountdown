@@ -65,7 +65,7 @@ var processCSVData = function(data) {
     ar = $.csv.toObjects(data);
     for (let i=0; i < ar.length; i++) {
         ar[i].deadline = moment(ar[i].deadline, "YYYY-MM-DD HH:mm:ss Z")
-        ar[i].approx = parseInt(ar[i].approx);
+        ar[i].approx = 0;
     }
     return ar;
 };
