@@ -1,7 +1,8 @@
 # ConferenceCountdown
 Webpage used to countdown time until conference deadlines.
 
-It uses the information in[conferences.csv](https://github.com/blengerich/ConferenceCountdown/blob/main/conferences.csv) to populate the countdown page.
+It uses the information in [conferences.csv](https://github.com/blengerich/ConferenceCountdown/blob/main/conferences.csv) to populate the countdown page.
+
 I work in the ML/Compbio space, so the conferences currently listed in [conferences.csv](https://github.com/blengerich/ConferenceCountdown/blob/main/conferences.csv) are focused on those themes, but the display will adapt to whatever is stored in that file.
 
 Feel free to suggest updates by [making an issue](https://github.com/blengerich/ConferenceCountdown/issues) on this repo, making a pull request, or even hosting your own version!
